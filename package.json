@@ -1,0 +1,14 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "practice css bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "wasim afsar",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
