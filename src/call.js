@@ -1,7 +1,10 @@
+// stop bubbling
 
-
-function clicked(){
-    document.body.style.backgroundColor = 'green';
+function divClickedStop(){
+    alert("div clicked");
 }
 
-clicked();
+function pClickStopped($event){
+    alert("P clicked");
+    $event.stopPropagation();
+}

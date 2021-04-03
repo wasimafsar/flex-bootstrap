@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <script src="index.js"></script>
+<script src="call.js"></script>
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <body>
@@ -21,5 +22,16 @@
     <button class="btn btn-info" onclick="learnAsync()">
         Click Me 
     </button>
+     <!-- event bubbling -->
+    <div onclick="divClicked()">
+        Div
+        <p onclick="pClicked()">Paragraph</p>
+    </div>
+  <!-- stop event bubbling  -->
+  <div onclick="divClickedStop()">
+    Div
+    <p onclick="pClickStopped(event)">Paragraph</p>
+</div>
+
 </body>
 </html>
